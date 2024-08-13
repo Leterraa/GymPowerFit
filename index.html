@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PowerFit</title>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/styles.css" />
+</head>
+
+<body>
+    <!-- Menu -->
+    <div class="menu">
+        <div class="container flex">
+            <div class="mobile-btn">
+                <ion-icon name="grid"></ion-icon>
+            </div>
+            <div class="logo">
+
+                <img src="img/_Pngtree_gym_logo_cartoon_5393334-removebg-preview.png" alt="PowerFit Logo" />
+                <span class="brand-name">PowerFit</span>
+            </div>
+            <ul class="nav">
+                <li class="nav-item"><a href="#home">Home</a></li>
+                <li class="nav-item"><a href="features.html">Features</a></li>
+                <li class="nav-item"><a href="explore.html">Explore</a></li>
+                <li class="nav-item"><a href="membership.html">Membership</a></li>
+            </ul>
+            <a href="contact.html" class="btn" id="btn-contactus">Contact Us</a>
+        </div>
+    </div>
+    <!-- End Menu -->
+
+    <!-- Header -->
+    <header class="header" id="home">
+        <div class="container flex">
+            <video autoplay loop muted plays-inline class="back-video">
+                <source src="videos/1104277_1080p_4k_1920x1080.mp4">
+            </video>
+            <div class="text">
+                <h1 class="mb">Get <span>Fit</span> <br/><span>Stay</span> Healthy!</h1>
+                <p class="mb">
+                    Join PowerFit today and transform your body with the best trainers and top-notch facilities.
+                </p>
+                <a href="#" class="btn mt">Start Now</a>
+            </div>
+           
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Why Us -->
+    <div class="section" id="why-us">
+    <div class="container flex">
+        <div class="text">
+            <h2 class="primary mb">Why Choose Us?</h2>
+            <h3 class="secondary mb">A wide selection of classes. <br> Experienced trainers.</h3>
+            <p class="tertiary">
+                At PowerFit, we offer a variety of fitness classes including yoga, TRX, and boxing, led by certified professionals. Our state-of-the-art facilities are designed to help you achieve your fitness goals.
+            </p>
+            <a href="features.html" class="btn mt">Read more</a>
+        </div>
+    </div>  
+</div>
+    <!-- End Why Us -->
+
+<!-- Explore -->
+<div class="section" id="explore">
+    <div class="container flex">
+        <div class="visual">
+            <video autoplay loop muted plays-inline class="back-explore-video">
+                <source src="videos/1105039_1080p_4k_1920x1080.mp4">
+            </video>
+        </div>
+        <div class="text">
+            <h2 class="primary mb">Explore Our Fitness <br /> Activities</h2>
+            <p class="tertiary mb">
+                Discover our range of fitness activities designed to cater to all levels of experience. Whether you are a beginner or an advanced athlete, PowerFit has something for everyone.
+            </p>
+            <a href="explore.html" class="btn mt">Get Started Now</a>
+        </div>
+    </div>
+</div>
+<!-- End Explore -->
+    <!-- Trainer -->
+    <div class="section" id="trainer">
+        <h2 class="primary mb">Our Professional Trainers</h2>
+        <div class="container flex">
+            <div class="trainer">
+                <img src="img/front-view-fit-man-holding-water-bottle.png" alt="Jake Smith" />
+                <h3 class="secondary mb">Jake Smith</h3>
+                <p class="tertiary mb">
+                    Jake is a certified fitness trainer with over 10 years of experience in strength training and bodybuilding.
+                </p>
+                <a href="trainers.html" class="btn-2">
+                    <ion-icon name="arrow-redo-circle-outline"></ion-icon>
+                </a>
+            </div>
+            <div class="trainer">
+                <img src="img/beautiful-sportive-woman-holding-bottle-posing.png" alt="Sara Simon" />
+                <h3 class="secondary mb">Sara Simon</h3>
+                <p class="tertiary mb">
+                    Sara specializes in yoga and TRX, helping clients improve flexibility and core strength through personalized programs.
+                </p>
+                <a href="trainers.html" class="btn-2">
+                    <ion-icon name="arrow-redo-circle-outline"></ion-icon>
+                </a>
+            </div>
+            <div class="trainer">
+                <img src="img/front-view-shirtless-male-boxer-posing-with-fists-ready.png" alt="William Lu" />
+                <h3 class="secondary mb">William Lu</h3>
+                <p class="tertiary mb">
+                    William is an expert in boxing and high-intensity interval training, known for his dynamic and motivating classes.
+                </p>
+                <a href="trainers" class="btn-2">
+                    <ion-icon name="arrow-redo-circle-outline"></ion-icon>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- End Trainer -->
+    <!-- Discount -->
+    <div class="section" id="discount">
+        <div class="container flex">
+        
+            <div class="text">
+                <h2 class="primary mb">Book your first visit for free!</h2>
+                <p class="tertiary mb">
+                    Experience PowerFit for yourself. Book your first visit today and get a personalized tour and a free fitness consultation.
+                </p>
+                <a href="#contact.html" class="btn bt">Book Now</a>
+            </div>
+        </div>
+    </div>
+    <!-- End Discount -->
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="container footer-top">
+        <div class="row justify-content-center">
+            <div class="col-md-auto text-center">
+                <!-- Newsletter Signup -->
+                <div class="newsletter">
+                    <h3>Sign up for our newsletter</h3>
+                    <p>Get the latest updates, insights, and news.</p>
+                    <div class="newsletter-signup">
+                        <input type="email" placeholder="Enter your email">
+                        <button>Subscribe</button>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+    <!-- Footer Bottom: Menu, Quick Links, Operational Hours -->
+    <div class="container-fluid footer-bottom">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="menu-column">
+                    <h4>Menu</h4>
+                    <a href="#">Home</a>
+                    <a href="#">Membership</a>
+                    <a href="#">About</a>
+                    <a href="#">Blog</a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="menu-column">
+                    <h4>Quick Links</h4>
+                    <a href="#">Login</a>
+                    <a href="#">Register</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="operational">
+                    <h4>Operational</h4>
+                    <p>Every day: 9:00 – 22:00</p>
+                    <p>Sat – Sun: 8:00 – 21:00</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d99938.35403457949!2d24.01223555!3d49.83268904999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add7c09109a57%3A0x4223c517012378e2!2z0JvRjNCy0ZbQsiwg0JvRjNCy0ZbQstGB0YzQutCwINC-0LHQu9Cw0YHRgtGMLCA3OTAwMA!5e1!3m2!1suk!2sua!4v1723308170830!5m2!1suk!2sua" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <p>123 PowerFit Lviv, Ukraine</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom text-center">
+        <p>&copy; 2024 PowerFit. All Rights Reserved.</p>
+    </div>
+</footer>
+<!-- end footer -->
+    <script src="script.js"></script>
+</body>
+</html>
