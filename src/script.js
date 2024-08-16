@@ -1,8 +1,6 @@
-document.querySelector(".mobile-btn").addEventListener("click", function () {
-    document.querySelector(".menu").classList.toggle("active");
-  }); 
+const mobileBtn = document.querySelector('.mobile-btn');
+const nav = document.querySelector('.nav');
 
-
-
-
-
+mobileBtn.addEventListener('click', () => {
+  nav.classList.toggle('active');
+});
