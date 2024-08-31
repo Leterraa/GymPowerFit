@@ -75,40 +75,46 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 // EXPLORE SECTION
-  // Get modal element
-const modal = document.getElementById("trainerModal");
-const modalImg = document.getElementById("modalTrainerImage");
-const modalName = document.getElementById("modalTrainerName");
-const modalBio = document.getElementById("modalTrainerBio");
+document.addEventListener('DOMContentLoaded', function() {
+  const trainers = document.querySelectorAll('.trainer-card');
+  const modal = document.getElementById('trainerModal');
+  const closeBtn = document.querySelector('.close-btn');
+  const modalTrainerName = document.getElementById('modalTrainerName');
+  const modalTrainerBio = document.getElementById('modalTrainerBio');
+  const modalSpecialization = document.getElementById('modalSpecialization');
+  const modalCertifications = document.getElementById('modalCertifications');
+  const modalExperience = document.getElementById('modalExperience');
+  const modalContact = document.getElementById('modalContact');
+  const modalTrainerImage = document.getElementById('modalTrainerImage');
 
-// Get close button
-const closeBtn = document.getElementsByClassName("close-btn")[0];
+  trainers.forEach(trainer => {
+      trainer.addEventListener('click', function() {
+          const name = this.getAttribute('data-trainer');
+          const specialization = this.getAttribute('data-specialization');
+          const certifications = this.getAttribute('data-certifications');
+          const experience = this.getAttribute('data-experience');
+          const contact = this.getAttribute('data-contact');
+          const imgSrc = this.querySelector('.trainer-avatar img').src;
 
-// Add event listeners to each trainer
-document.querySelectorAll('.trainer').forEach(trainer => {
-    trainer.addEventListener('click', function() {
-        const trainerImg = this.querySelector('.trainer-avatar img').src;
-        const trainerName = this.querySelector('.trainer-info h3').textContent;
-        const trainerBio = this.querySelector('.trainer-info p').textContent;
+          modalTrainerName.textContent = name;
+          modalTrainerImage.src = imgSrc;
+          modalTrainerBio.textContent = this.querySelector('.trainer-info p').textContent;
+          modalSpecialization.textContent = `Specialization: ${specialization}`;
+          modalCertifications.textContent = `Certifications: ${certifications}`;
+          modalExperience.textContent = `Experience: ${experience}`;
+          modalContact.textContent = `Contact: ${contact}`;
 
-        // Set modal content
-        modalImg.src = trainerImg;
-        modalName.textContent = trainerName;
-        modalBio.textContent = trainerBio;
+          modal.style.display = 'block';
+      });
+  });
 
-        // Show modal
-        modal.style.display = "flex";
-    });
+  closeBtn.addEventListener('click', function() {
+      modal.style.display = 'none';
+  });
+
+  window.addEventListener('click', function(event) {
+      if (event.target === modal) {
+          modal.style.display = 'none';
+      }
+  });
 });
-
-// Close the modal
-closeBtn.onclick = function() {
-    modal.style.display = "none";
-};
-
-// Close modal if clicked outside content
-window.onclick = function(event) {
-    if (event.target === modal) {
-        modal.style.display = "none";
-    }
-};
