@@ -34,15 +34,15 @@
                   <li><a class="menu__item" href="features.html">Features</a></li>
                   <li><a class="menu__item" href="explore.html">Explore</a></li>
                   <li><a class="menu__item" href="trainers.html">Trainers</a></li>
-                  <li><a class="menu__item" href="membership.html">Mmbership</a></li>
+                  <li><a class="menu__item" href="membership.html">Membership</a></li>
                   <li><a class="menu__item" href="contact.html">Contact</a></li>
                 </ul>
               </div>
         </div>
         <!-- End Menu -->
 
-    <!-- Explore Section -->
-    <div class="section" id="explore">
+      <!-- Explore Section -->
+      <div class="section" id="explore">
         <div class="container flex">
             <h2 class="primary mb">Explore Our Fitness Activities</h2>
             <div class="activity">
@@ -70,6 +70,57 @@
     </div>
     <!-- End Explore Section -->
 
-    <script src="script.js"></script>
+    <!-- Trainers Section -->
+    <div class="section" id="trainers">
+        <div class="container">
+            <h2 class="primary mb">Meet Our Trainers</h2>
+            <div class="trainers-grid">
+                <div class="trainer active">
+                    <div class="trainer-avatar">
+                        <img src="img/front-view-shirtless-male-boxer-posing-with-fists-ready.png" alt="Trainer 1">
+                    </div>
+                    <div class="trainer-info">
+                        <h3>William Lu</h3>
+                        <p> William is an expert in boxing and high-intensity interval training, known for his dynamic and motivating classes.</p>
+                    </div>
+                </div>
+                <div class="trainer">
+                    <div class="trainer-avatar">
+                        <img src="img/front-view-fit-man-holding-water-bottle.png" alt="Trainer 2">
+                    </div>
+                    <div class="trainer-info">
+                        <h3>Jake Smith</h3>
+                        <p> Jake is a certified fitness trainer with over 10 years of experience in strength training and bodybuilding.</p>
+                    </div>
+                </div>
+    
+                <div class="trainer">
+                    <div class="trainer-avatar">
+                        <img src="img/beautiful-sportive-woman-holding-bottle-posing.png" alt="Trainer 4">
+                    </div>
+                    <div class="trainer-info">
+                        <h3>Sarah Simon</h3>
+                        <p>Sarah specializes in yoga and TRX, helping clients improve flexibility and core strength through personalized programs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Trainers Section -->
+<!-- Modal Structure -->
+<div id="trainerModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <div class="trainer-details">
+          <div class="trainer-avatar-large">
+              <img id="modalTrainerImage" src="img/medium-shot-fit-woman-grayscale.jpg" alt="Trainer Image">
+          </div>
+          <h3 id="modalTrainerName">Trainer Name</h3>
+          <p id="modalTrainerBio">Trainer bio goes here...</p>
+          <a href="contact.html" class="btn" id="bookSessionBtn">Book a Session</a>
+      </div>
+    </div>
+  </div>
+<script src="src/script.js"></script>
 </body>
 </html>

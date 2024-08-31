@@ -50,7 +50,7 @@
               <li><a class="menu__item" href="features.html">Features</a></li>
               <li><a class="menu__item" href="explore.html">Explore</a></li>
               <li><a class="menu__item" href="trainers.html">Trainers</a></li>
-              <li><a class="menu__item" href="membership.html">Mmbership</a></li>
+              <li><a class="menu__item" href="membership.html">Membership</a></li>
               <li><a class="menu__item" href="contact.html">Contact</a></li>
             </ul>
           </div>
@@ -99,19 +99,27 @@
         <div class="popup-content">
             <span class="close-btn" onclick="closePopup()">&times;</span>
             <h3>Join the <span id="plan-name"></span> Plan</h3>
-            <form id="membershipForm">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="surname">Surname:</label>
-                <input type="text" id="surname" name="surname" required>
-                <label for="phone">Phone Number:</label>
-                <input type="text" id="phone" name="phone" required>
-                <label for="membership">Selected Membership:</label>
-                <input type="text" id="membership" name="membership" readonly>
-                <button type="submit" class="btn">Submit</button>
+            <form id="membershipForm" class="black-text-form">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="name" placeholder="John">
+                    <label for="name">Name</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="surname" placeholder="Doe">
+                    <label for="surname">Surname</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="phone" placeholder="123-456-7890">
+                    <label for="phone">Phone Number</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="membership" readonly>
+                    <label for="membership">Selected Membership</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
             </form>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script src="src/script.js"></script>
 </body>
 </html>

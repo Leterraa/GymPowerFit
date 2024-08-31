@@ -2,23 +2,31 @@
     "Monday": [
         {"time": "9:00 AM", "activity": "Yoga"},
         {"time": "11:00 AM", "activity": "Boxing"},
+        {"time": "2:00 PM", "activity": "CrossFit"},
         {"time":"4:00 PM", "activity":"Yoga"} ,       
-        {"time": "6:00 PM", "activity": "Boxing"}
+        {"time": "6:00 PM", "activity": "Boxing"},
+        {"time": "8:00 PM", "activity": "CrossFit"}
     ],
     "Tuesday": [
         {"time": "10:00 AM", "activity": "TRX"},
+        {"time": "12:00 PM", "activity": "CrossFit"},
         {"time": "1:00 PM", "activity": "Boxing"},
+        {"time": "3:00 PM", "activity": "CrossFit"},
         {"time":"4:00 PM","activity":"Boxing"},
         {"time": "7:00 PM", "activity": "Yoga"}
     ],
     "Wednesday": [
         {"time": "9:00 AM", "activity": "Boxing"},
         {"time": "12:00 PM", "activity": "TRX"},
-        {"time": "5:00 PM", "activity": "TRX"}
+        {"time": "2:00 PM", "activity": "CrossFit"},
+        {"time": "5:00 PM", "activity": "TRX"},
+        {"time": "7:00 PM", "activity": "CrossFit"}
     ],
     "Thursday": [
         {"time": "10:00 AM", "activity": "Yoga"},
+        {"time": "11:00 AM", "activity": "Boxing"},
         {"time": "2:00 PM", "activity": "Yoga"},
+        {"time": "4:00 PM", "activity": "CrossFit"},
         {"time": "6:00 PM", "activity": "TRX"}
     ]
 }

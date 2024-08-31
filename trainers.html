@@ -1,31 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PowerFit - Trainers</title>
-    <link rel="stylesheet" href="src/styles.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PowerFit</title>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/styles.css" />
 </head>
+
 <body>
     <!-- Menu -->
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>PowerFit</title>
-        <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
-        <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <link rel="stylesheet" href="src/styles.css" />
-        
-    </head>
-    
-    <body>
-        <!-- Menu -->
-     <!-- Menu -->
-     <div class="menu">
+    <div class="menu">
         <div class="container flex">
             <a class="navbar-brand" href="index.html">
                 <div class="logo">
@@ -44,42 +32,61 @@
         <div class="hamburger-menu">
             <input id="menu__toggle" type="checkbox" />
             <label class="menu__btn" for="menu__toggle">
-              <span></span>
+                <span></span>
             </label>
             <ul class="menu__box">
-              <li><a class="menu__item" href="index.html">Home</a></li>
-              <li><a class="menu__item" href="features.html">Features</a></li>
-              <li><a class="menu__item" href="explore.html">Explore</a></li>
-              <li><a class="menu__item" href="trainers.html">Trainers</a></li>
-              <li><a class="menu__item" href="membership.html">Mmbership</a></li>
-              <li><a class="menu__item" href="contact.html">Contact</a></li>
+                <li><a class="menu__item" href="index.html">Home</a></li>
+                <li><a class="menu__item" href="features.html">Features</a></li>
+                <li><a class="menu__item" href="explore.html">Explore</a></li>
+                <li><a class="menu__item" href="trainers.html">Trainers</a></li>
+                <li><a class="menu__item" href="membership.html">Membership</a></li>
+                <li><a class="menu__item" href="contact.html">Contact</a></li>
             </ul>
-          </div>
+        </div>
     </div>
     <!-- End Menu -->
+
     <!-- Trainers Section -->
-    <div class="section" id="trainers">
-        <div class="container flex">
-            <h2 class="primary mb">Meet Our Professional Trainers</h2>
-            <div class="trainer-profile">
-                <img src="img/6.png" alt="Jake Smith" />
+    <div class="trainers-section-page">
+        <h2 class="primary mb">Meet Our Professional Trainers</h2>
+        <div class="trainers-grid">
+            <div class="trainer-card">
+                <img src="img/front-view-fit-man-holding-water-bottle.png" alt="Jake Smith" />
                 <h3>Jake Smith</h3>
                 <p>Certified fitness trainer with over 10 years of experience in strength training and bodybuilding.</p>
+                <div class="trainer-details">
+                    <p class="specialization">Specialization: Strength Training</p>
+                    <p class="certifications">Certifications: NASM, ACE</p>
+                    <p class="experience">Experience: 10 Years</p>
+                    <p class="contact">Contact: jake@powerfit.com</p>
+                </div>
             </div>
-            <div class="trainer-profile">
-                <img src="img/4.png" alt="Sara Simon" />
+            <div class="trainer-card">
+                <img src="img/beautiful-sportive-woman-holding-bottle-posing.png" alt="Sara Simon" />
                 <h3>Sara Simon</h3>
                 <p>Specializes in yoga and TRX, helping clients improve flexibility and core strength through personalized programs.</p>
+                <div class="trainer-details">
+                    <p class="specialization">Specialization: Yoga, TRX</p>
+                    <p class="certifications">Certifications: RYT 500, TRX Certified</p>
+                    <p class="experience">Experience: 8 years</p>
+                    <p class="contact">Contact: sara.simon@example.com</p>
+                </div>
             </div>
-            <div class="trainer-profile">
-                <img src="img/1.png" alt="William Lu" />
+            <div class="trainer-card">
+                <img src="img/front-view-shirtless-male-boxer-posing-with-fists-ready.png" alt="William Lu" />
                 <h3>William Lu</h3>
                 <p>Expert in boxing and high-intensity interval training, known for dynamic and motivating classes.</p>
+                <div class="trainer-details">
+                    <p class="specialization">Specialization: Boxing, HIIT</p>
+                    <p class="certifications">Certifications: Boxing Coach, HIIT Certified</p>
+                    <p class="experience">Experience: 12 years</p>
+                    <p class="contact">Contact: william.lu@example.com</p>
+                </div>
             </div>
         </div>
     </div>
     <!-- End Trainers Section -->
 
-    <script src="script.js"></script>
+    <script src="src/script.js"></script>
 </body>
 </html>
